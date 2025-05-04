@@ -1,24 +1,23 @@
 {
-  "name": "trpc-cloudflare-starter",
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
-  },
-  "devDependencies": {
-    "prettier": "^3.5.3",
-    "turbo": "^2.5.2",
-    "typescript": "5.8.2"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.2.5",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+	"name": "trpc-next-starter",
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"format": "bunx biome format --write .",
+		"lint:biome": "bunx biome lint --write --unsafe .",
+		"lint": "turbo run lint",
+		"check-types": "turbo run check-types"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"prettier": "^3.5.3",
+		"turbo": "^2.5.2",
+		"typescript": "5.8.2"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "bun@1.2.5",
+	"workspaces": ["apps/*", "packages/*"]
 }

@@ -1,0 +1,19 @@
+{
+	"name": "@app/db",
+	"type": "module",
+	"version": "0.0.0",
+	"private": true,
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"lint": "eslint . --max-warnings 0",
+		"check-types": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@app/eslint-config": "*",
+		"@app/typescript-config": "*",
+		"eslint": "^9.25.0",
+		"typescript": "5.8.2"
+	}
+}
