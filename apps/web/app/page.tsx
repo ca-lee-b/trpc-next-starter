@@ -1,4 +1,4 @@
-import { Button } from "@repo/ui/button";
+import { Button } from "@app/ui/button";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 // import { trpc } from "@/trpc/server";
 
